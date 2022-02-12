@@ -30,26 +30,255 @@
         <div class="container mt-5 p-3 my-3 border  bg-light text-dark">
             <form action="/" method="post">
 
-<!-- QUESTINS-->
-<div class="row justify-content-end mt-2">
+                <!-- QUESTINS-->
 
-    <div class="col" align="center">
-      <input type="text" name="ID">
-      <label for="ID" class="col-form-label col-form-label-lg">ת"ז</label>
-    </div>
-</div>
+                <!-- ROW 1-->
+                <div class="row justify-content-end mt-2">
 
-<!-- END OF QUESTION-->
-
-
-                <!-- BUTTON-->
-                <div class="row justify-content-center mt-5">
                     <div class="col" align="center">
-                        <button type="submit" name="submit">שלח</button>
+                        <input type="text" name="ID">
+                        <label for="ID" class="col-form-label col-form-label-lg">ת"ז</label>
+                    </div>
+
+                    <div class="col" align="center">
+                        <input type="text" name="AGE">
+                        <label for="AGE" class="col-form-label col-form-label-lg">גיל</label>
+                    </div>
+
+                    <div class="col" align="center">
+                        <label for="GENDER" class="col-sm-2 col-form-label">מין</label>
+                        <select name="GENDER">
+                            <option>Male</option>
+                            <option>Female</option>
+                        </select>
+                    </div>
+
+                </div>
+                <!-- END ROW 1-->
+
+                <!-- ROW 2-->
+                <div class="row justify-content-end mt-2">
+
+                    <div class="col" align="center">
+                        <input type="text" name="DURATION">
+                        <label for="DURATION" class="col-form-label col-form-label-lg">משך בשנים</label>
+                    </div>
+
+
+                    <div class="col" align="center">
+                        <label for="PROSTHESIS" class="col-sm-2 col-form-label">שתל</label>
+                        <select name="PROSTHESIS">
+                            <option>NO</option>
+                            <option>YES</option>
+                        </select>
+
+                    </div>
+
+                </div>
+                <!-- END ROW 2-->
+
+
+                <!-- ROW 3-->
+                <div class="row justify-content-end mt-2">
+
+                    <div class="col" align="center">
+                        <label for="OCUPATION" class="col-sm-2 col-form-label">מקצוע</label>
+                        <select class="form-control" name="OCUPATION">
+                            <option value="unknown" selected>unknown</option>
+                            <option value="houseperson">houseperson</option>
+                            <option value="laborer">laborer</option>
+                            <option value="healthcare">healthcare</option>
+                            <option value="painter">painter</option>
+                            <option value="hairdresser">hairdresser</option>
+                        </select>
+                    </div>
+
+                    <div class="col" align="center">
+                        <label for="PART">איבר גוף מעורב</label>
+                        <select multiple class="form-control" name="PART">
+                            <option value="face">face</option>
+                            <option value="scalp">scalp</option>
+                            <option value="neck">neck</option>
+                            <option value="trunck">trunck</option>
+                            <option value="back">back</option>
+                            <option value="upper_limbs">upper limbs</option>
+                            <option value="lower_limbs">lower limbs</option>
+                        </select>
+                    </div>
+
+
+                </div>
+                <!-- END ROW 3-->
+
+                <h1 align='center' class="mt-4"> תוצאות טסטים</h1>
+
+                <!-- TESTIM-->
+                
+                <!-- TEST1-->
+                <div class="row justify-content-end mt-4">
+
+                    <div class="col" align="center">
+                        <select class="form-control" name="TESTTYPE1">
+                            <option value="unknown" selected>סטנדרט</option>
+                            <option value="houseperson">נדיפים</option>
+                            <option value="laborer">קוסמטיקה</option>
+                            <option value="healthcare">בשמים</option>
+                            <option value="painter">אקרילים</option>                            
+                        </select>
+                    </div>
+                
+                    <div class="col" align="center">
+                        <input type="text" name="TESTNUM1">
+                        <label for="TESTNUM1" class="col-form-label col-form-label-lg">מספר</label>
+                    </div>
+                    
+                    <div class="col" align="center">
+                        <select class="form-control" name="TESTRESULTS1">
+                            <option value="0" selected>+-</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                                                    
+                        </select>
+                    </div>
+
+                    <div class="col" align="center">
+                        <select name="TESTREL1">
+                            <option>NON RELEVANT</option>
+                            <option>RELEVANT</option>
+                        </select>
 
                     </div>
                 </div>
-                <!-- END OD BUTTON-->
+                <!--END OF  TEST1-->
+
+                <!-- TEST1-->
+                <div class="row justify-content-end mt-4">
+
+                    <div class="col" align="center">
+                        <select class="form-control" name="TESTTYPE1">
+                            <option value="unknown" selected>סטנדרט</option>
+                            <option value="houseperson">נדיפים</option>
+                            <option value="laborer">קוסמטיקה</option>
+                            <option value="healthcare">בשמים</option>
+                            <option value="painter">אקרילים</option>                            
+                        </select>
+                    </div>
+                
+                    <div class="col" align="center">
+                        <input type="text" name="TESTNUM1">
+                        <label for="TESTNUM1" class="col-form-label col-form-label-lg">מספר</label>
+                    </div>
+                    
+                    <div class="col" align="center">
+                        <select class="form-control" name="TESTRESULTS1">
+                            <option value="0" selected>+-</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                                                    
+                        </select>
+                    </div>
+
+                    <div class="col" align="center">
+                        <select name="TESTREL1">
+                            <option>NON RELEVANT</option>
+                            <option>RELEVANT</option>
+                        </select>
+
+                    </div>
+                </div>
+                <!--END OF  TEST1-->
+
+                <!-- TEST1-->
+                <div class="row justify-content-end mt-4">
+
+                    <div class="col" align="center">
+                        <select class="form-control" name="TESTTYPE1">
+                            <option value="unknown" selected>סטנדרט</option>
+                            <option value="houseperson">נדיפים</option>
+                            <option value="laborer">קוסמטיקה</option>
+                            <option value="healthcare">בשמים</option>
+                            <option value="painter">אקרילים</option>                            
+                        </select>
+                    </div>
+                
+                    <div class="col" align="center">
+                        <input type="text" name="TESTNUM1">
+                        <label for="TESTNUM1" class="col-form-label col-form-label-lg">מספר</label>
+                    </div>
+                    
+                    <div class="col" align="center">
+                        <select class="form-control" name="TESTRESULTS1">
+                            <option value="0" selected>+-</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                                                    
+                        </select>
+                    </div>
+
+                    <div class="col" align="center">
+                        <select name="TESTREL1">
+                            <option>NON RELEVANT</option>
+                            <option>RELEVANT</option>
+                        </select>
+
+                    </div>
+                </div>
+                <!--END OF  TEST1-->
+
+                <!-- TEST1-->
+                <div class="row justify-content-end mt-4">
+
+                    <div class="col" align="center">
+                        <select class="form-control" name="TESTTYPE1">
+                            <option value="unknown" selected>סטנדרט</option>
+                            <option value="houseperson">נדיפים</option>
+                            <option value="laborer">קוסמטיקה</option>
+                            <option value="healthcare">בשמים</option>
+                            <option value="painter">אקרילים</option>                            
+                        </select>
+                    </div>
+                
+                    <div class="col" align="center">
+                        <input type="text" name="TESTNUM1">
+                        <label for="TESTNUM1" class="col-form-label col-form-label-lg">מספר</label>
+                    </div>
+                    
+                    <div class="col" align="center">
+                        <select class="form-control" name="TESTRESULTS1">
+                            <option value="0" selected>+-</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                                                    
+                        </select>
+                    </div>
+
+                    <div class="col" align="center">
+                        <select name="TESTREL1">
+                            <option>NON RELEVANT</option>
+                            <option>RELEVANT</option>
+                        </select>
+
+                    </div>
+                </div>
+                <!--END OF  TEST1-->
+
+                <!-- END OF TESTIM-->
+
+                    <!-- END OF QUESTION-->
+
+
+                    <!-- BUTTON-->
+                    <div class="row justify-content-center mt-5">
+                        <div class="col" align="center">
+                            <button type="submit" name="submit">שלח</button>
+
+                        </div>
+                    </div>
+                    <!-- END OD BUTTON-->
 
             </form>
         </div>
