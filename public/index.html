@@ -42,7 +42,7 @@
 
                     <div class="col" align="center">
                         <input type="text" name="AGE">
-                        <label for="AGE" class="col-form-label col-form-label-lg">גיל</label>
+                        <label for="AGE" class="col-form-label col-form-label-lg">שנת לידה</label>
                     </div>
 
                     <div class="col" align="center">
@@ -60,8 +60,13 @@
                 <div class="row justify-content-end mt-2">
 
                     <div class="col" align="center">
-                        <input type="text" name="DURATION">
+                        <input type="text" name="DURATIONYEARS">
                         <label for="DURATION" class="col-form-label col-form-label-lg">משך בשנים</label>
+                    </div>
+
+                    <div class="col" align="center">
+                        <input type="text" name="DURATIONMONTHS">
+                        <label for="DURATION" class="col-form-label col-form-label-lg">משך בחודשים</label>
                     </div>
 
 
@@ -77,19 +82,53 @@
                 </div>
                 <!-- END ROW 2-->
 
-
                 <!-- ROW 3-->
+                <div class="row justify-content-end mt-2">
+
+                    
+                    <div class="col" align="center">
+                        <label for="ATOPIC" class="col-sm-4 col-form-label">רקע אטופי</label>
+                        <select name="ATOPIC">
+                            <option>NO</option>
+                            <option>YES</option>
+                        </select>
+
+                    </div>
+
+                    <div class="col" align="center">
+                        <label for="LACGEL" class="col-sm-2 col-form-label">לק ג'ל</label>
+                        <select name="LACGEL">
+                            <option>NO</option>
+                            <option>YES</option>
+                        </select>
+
+                    </div>
+
+                </div>
+                <!-- END ROW 3-->
+
+
+                <!-- ROW 4-->
                 <div class="row justify-content-end mt-2">
 
                     <div class="col" align="center">
                         <label for="OCUPATION" class="col-sm-2 col-form-label">מקצוע</label>
                         <select class="form-control" name="OCUPATION">
                             <option value="unknown" selected>unknown</option>
-                            <option value="houseperson">houseperson</option>
-                            <option value="laborer">laborer</option>
-                            <option value="healthcare">healthcare</option>
-                            <option value="painter">painter</option>
-                            <option value="hairdresser">hairdresser</option>
+                            <option value="houseperson">עקר בית</option>
+                            <option value="doctor">רופא/אח</option>
+                            <option value="barber">ספר</option>
+                            <option value="cosmetician">קוסמטיקאי</option>
+                            <option value="dentist">רופא שיניים</option>
+                            <option value="hairdresser">ספר</option>
+                            <option value="nails">ציפורניים</option>
+                            <option value="cook">טבח</option>
+                            <option value="plants">צמחים</option>
+                            <option value="soldier">חייל</option>
+                            <option value="industry">תעשיייה</option>
+                            <option value="cars">מוסך</option>
+                            <option value="painter">צייר</option>
+                            <option value="other">אחר</option>
                         </select>
                     </div>
 
@@ -108,7 +147,7 @@
 
 
                 </div>
-                <!-- END ROW 3-->
+                <!-- END ROW 4-->
 
                 <h1 align='center' class="mt-4"> תוצאות טסטים</h1>
 
@@ -119,11 +158,24 @@
 
                     <div class="col" align="center">
                         <select class="form-control" name="TESTTYPE1">
-                            <option value="unknown" selected>סטנדרט</option>
-                            <option value="houseperson">נדיפים</option>
-                            <option value="laborer">קוסמטיקה</option>
-                            <option value="healthcare">בשמים</option>
-                            <option value="painter">אקרילים</option>                            
+                            <option value="standard" selected>סטנדרט</option>
+                            <option value="perishable">נדיפים</option>
+                            <option value="cosmetics">קוסמטיקה</option>
+                            <option value="perfumes">בשמים</option>
+                            <option value="textile">טקסטיל</option>
+                            <option value="shoes">נעליים</option> 
+                            <option value="lotions">משחות</option>
+                            <option value="acrilate">אקרילאטים</option>
+                            <option value="dental">דנטלי</option>
+                            <option value="barbers">ספרים</option>
+                            <option value="metals">מתכוח</option>
+                            <option value="plants">צמחים</option>
+                            <option value="steroids">סטרואידים</option>
+                            <option value="baking">אפייה</option>
+                            <option value="oils">שמנים</option>
+                            <option value="makeup">איפור</option>
+                            <option value="rubber">גומי</option>
+                            <option value="plastic">פלסטיק</option>                           
                         </select>
                     </div>
                 
@@ -144,34 +196,48 @@
 
                     <div class="col" align="center">
                         <select name="TESTREL1">
-                            <option>NON RELEVANT</option>
-                            <option>RELEVANT</option>
+                            <option value="unknown" selected>UNKNOWN</option>
+                            <option value="non-relevant">NON RELEVANT</option>
+                            <option value='relevant'>RELEVANT</option>
                         </select>
 
                     </div>
                 </div>
                 <!--END OF  TEST1-->
 
-                <!-- TEST1-->
+                <!-- TEST2-->
                 <div class="row justify-content-end mt-4">
 
                     <div class="col" align="center">
-                        <select class="form-control" name="TESTTYPE1">
-                            <option value="unknown" selected>סטנדרט</option>
-                            <option value="houseperson">נדיפים</option>
-                            <option value="laborer">קוסמטיקה</option>
-                            <option value="healthcare">בשמים</option>
-                            <option value="painter">אקרילים</option>                            
+                        <select class="form-control" name="TESTTYPE2">
+                            <option value="standard" selected>סטנדרט</option>
+                            <option value="perishable">נדיפים</option>
+                            <option value="cosmetics">קוסמטיקה</option>
+                            <option value="perfumes">בשמים</option>
+                            <option value="textile">טקסטיל</option>
+                            <option value="shoes">נעליים</option> 
+                            <option value="lotions">משחות</option>
+                            <option value="acrilate">אקרילאטים</option>
+                            <option value="dental">דנטלי</option>
+                            <option value="barbers">ספרים</option>
+                            <option value="metals">מתכוח</option>
+                            <option value="plants">צמחים</option>
+                            <option value="steroids">סטרואידים</option>
+                            <option value="baking">אפייה</option>
+                            <option value="oils">שמנים</option>
+                            <option value="makeup">איפור</option>
+                            <option value="rubber">גומי</option>
+                            <option value="plastic">פלסטיק</option>                           
                         </select>
                     </div>
                 
                     <div class="col" align="center">
-                        <input type="text" name="TESTNUM1">
+                        <input type="text" name="TESTNUM2">
                         <label for="TESTNUM1" class="col-form-label col-form-label-lg">מספר</label>
                     </div>
                     
                     <div class="col" align="center">
-                        <select class="form-control" name="TESTRESULTS1">
+                        <select class="form-control" name="TESTRESULTS2">
                             <option value="0" selected>+-</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -181,35 +247,49 @@
                     </div>
 
                     <div class="col" align="center">
-                        <select name="TESTREL1">
-                            <option>NON RELEVANT</option>
-                            <option>RELEVANT</option>
+                        <select name="TESTREL2">
+                            <option value="unknown" selected>UNKNOWN</option>
+                            <option value="non-relevant">NON RELEVANT</option>
+                            <option value='relevant'>RELEVANT</option>
                         </select>
 
                     </div>
                 </div>
-                <!--END OF  TEST1-->
-
-                <!-- TEST1-->
+                <!--END OF  TEST2-->
+                
+                <!-- TEST3-->
                 <div class="row justify-content-end mt-4">
 
                     <div class="col" align="center">
-                        <select class="form-control" name="TESTTYPE1">
-                            <option value="unknown" selected>סטנדרט</option>
-                            <option value="houseperson">נדיפים</option>
-                            <option value="laborer">קוסמטיקה</option>
-                            <option value="healthcare">בשמים</option>
-                            <option value="painter">אקרילים</option>                            
+                        <select class="form-control" name="TESTTYPE3">
+                            <option value="standard" selected>סטנדרט</option>
+                            <option value="perishable">נדיפים</option>
+                            <option value="cosmetics">קוסמטיקה</option>
+                            <option value="perfumes">בשמים</option>
+                            <option value="textile">טקסטיל</option>
+                            <option value="shoes">נעליים</option> 
+                            <option value="lotions">משחות</option>
+                            <option value="acrilate">אקרילאטים</option>
+                            <option value="dental">דנטלי</option>
+                            <option value="barbers">ספרים</option>
+                            <option value="metals">מתכוח</option>
+                            <option value="plants">צמחים</option>
+                            <option value="steroids">סטרואידים</option>
+                            <option value="baking">אפייה</option>
+                            <option value="oils">שמנים</option>
+                            <option value="makeup">איפור</option>
+                            <option value="rubber">גומי</option>
+                            <option value="plastic">פלסטיק</option>                           
                         </select>
                     </div>
                 
                     <div class="col" align="center">
-                        <input type="text" name="TESTNUM1">
+                        <input type="text" name="TESTNUM3">
                         <label for="TESTNUM1" class="col-form-label col-form-label-lg">מספר</label>
                     </div>
                     
                     <div class="col" align="center">
-                        <select class="form-control" name="TESTRESULTS1">
+                        <select class="form-control" name="TESTRESULTS3">
                             <option value="0" selected>+-</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -219,35 +299,49 @@
                     </div>
 
                     <div class="col" align="center">
-                        <select name="TESTREL1">
-                            <option>NON RELEVANT</option>
-                            <option>RELEVANT</option>
+                        <select name="TESTREL3">
+                            <option value="unknown" selected>UNKNOWN</option>
+                            <option value="non-relevant">NON RELEVANT</option>
+                            <option value='relevant'>RELEVANT</option>
                         </select>
 
                     </div>
                 </div>
-                <!--END OF  TEST1-->
+                <!--END OF  TEST3-->
 
-                <!-- TEST1-->
+                <!-- TEST4-->
                 <div class="row justify-content-end mt-4">
 
                     <div class="col" align="center">
-                        <select class="form-control" name="TESTTYPE1">
-                            <option value="unknown" selected>סטנדרט</option>
-                            <option value="houseperson">נדיפים</option>
-                            <option value="laborer">קוסמטיקה</option>
-                            <option value="healthcare">בשמים</option>
-                            <option value="painter">אקרילים</option>                            
+                        <select class="form-control" name="TESTTYPE4">
+                            <option value="standard" selected>סטנדרט</option>
+                            <option value="perishable">נדיפים</option>
+                            <option value="cosmetics">קוסמטיקה</option>
+                            <option value="perfumes">בשמים</option>
+                            <option value="textile">טקסטיל</option>
+                            <option value="shoes">נעליים</option> 
+                            <option value="lotions">משחות</option>
+                            <option value="acrilate">אקרילאטים</option>
+                            <option value="dental">דנטלי</option>
+                            <option value="barbers">ספרים</option>
+                            <option value="metals">מתכוח</option>
+                            <option value="plants">צמחים</option>
+                            <option value="steroids">סטרואידים</option>
+                            <option value="baking">אפייה</option>
+                            <option value="oils">שמנים</option>
+                            <option value="makeup">איפור</option>
+                            <option value="rubber">גומי</option>
+                            <option value="plastic">פלסטיק</option>                           
                         </select>
                     </div>
                 
                     <div class="col" align="center">
-                        <input type="text" name="TESTNUM1">
+                        <input type="text" name="TESTNUM4">
                         <label for="TESTNUM1" class="col-form-label col-form-label-lg">מספר</label>
                     </div>
                     
                     <div class="col" align="center">
-                        <select class="form-control" name="TESTRESULTS1">
+                        <select class="form-control" name="TESTRESULTS4">
                             <option value="0" selected>+-</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -257,14 +351,432 @@
                     </div>
 
                     <div class="col" align="center">
-                        <select name="TESTREL1">
-                            <option>NON RELEVANT</option>
-                            <option>RELEVANT</option>
+                        <select name="TESTREL4">
+                            <option value="unknown" selected>UNKNOWN</option>
+                            <option value="non-relevant">NON RELEVANT</option>
+                            <option value='relevant'>RELEVANT</option>
                         </select>
 
                     </div>
                 </div>
-                <!--END OF  TEST1-->
+                <!--END OF  TEST4-->
+
+                <!-- TEST5-->
+                <div class="row justify-content-end mt-4">
+
+                    <div class="col" align="center">
+                        <select class="form-control" name="TESTTYPE5">
+                            <option value="standard" selected>סטנדרט</option>
+                            <option value="perishable">נדיפים</option>
+                            <option value="cosmetics">קוסמטיקה</option>
+                            <option value="perfumes">בשמים</option>
+                            <option value="textile">טקסטיל</option>
+                            <option value="shoes">נעליים</option> 
+                            <option value="lotions">משחות</option>
+                            <option value="acrilate">אקרילאטים</option>
+                            <option value="dental">דנטלי</option>
+                            <option value="barbers">ספרים</option>
+                            <option value="metals">מתכוח</option>
+                            <option value="plants">צמחים</option>
+                            <option value="steroids">סטרואידים</option>
+                            <option value="baking">אפייה</option>
+                            <option value="oils">שמנים</option>
+                            <option value="makeup">איפור</option>
+                            <option value="rubber">גומי</option>
+                            <option value="plastic">פלסטיק</option>                           
+                        </select>
+                    </div>
+                
+                    <div class="col" align="center">
+                        <input type="text" name="TESTNUM5">
+                        <label for="TESTNUM1" class="col-form-label col-form-label-lg">מספר</label>
+                    </div>
+                    
+                    <div class="col" align="center">
+                        <select class="form-control" name="TESTRESULTS5">
+                            <option value="0" selected>+-</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                                                    
+                        </select>
+                    </div>
+
+                    <div class="col" align="center">
+                        <select name="TESTREL5">
+                            <option value="unknown" selected>UNKNOWN</option>
+                            <option value="non-relevant">NON RELEVANT</option>
+                            <option value='relevant'>RELEVANT</option>
+                        </select>
+
+                    </div>
+                </div>
+                <!--END OF  TEST5-->
+
+                <!-- TEST6-->
+                <div class="row justify-content-end mt-4">
+
+                    <div class="col" align="center">
+                        <select class="form-control" name="TESTTYPE6">
+                            <option value="standard" selected>סטנדרט</option>
+                            <option value="perishable">נדיפים</option>
+                            <option value="cosmetics">קוסמטיקה</option>
+                            <option value="perfumes">בשמים</option>
+                            <option value="textile">טקסטיל</option>
+                            <option value="shoes">נעליים</option> 
+                            <option value="lotions">משחות</option>
+                            <option value="acrilate">אקרילאטים</option>
+                            <option value="dental">דנטלי</option>
+                            <option value="barbers">ספרים</option>
+                            <option value="metals">מתכוח</option>
+                            <option value="plants">צמחים</option>
+                            <option value="steroids">סטרואידים</option>
+                            <option value="baking">אפייה</option>
+                            <option value="oils">שמנים</option>
+                            <option value="makeup">איפור</option>
+                            <option value="rubber">גומי</option>
+                            <option value="plastic">פלסטיק</option>                           
+                        </select>
+                    </div>
+                
+                    <div class="col" align="center">
+                        <input type="text" name="TESTNUM6">
+                        <label for="TESTNUM1" class="col-form-label col-form-label-lg">מספר</label>
+                    </div>
+                    
+                    <div class="col" align="center">
+                        <select class="form-control" name="TESTRESULTS6">
+                            <option value="0" selected>+-</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                                                    
+                        </select>
+                    </div>
+
+                    <div class="col" align="center">
+                        <select name="TESTREL6">
+                            <option value="unknown" selected>UNKNOWN</option>
+                            <option value="non-relevant">NON RELEVANT</option>
+                            <option value='relevant'>RELEVANT</option>
+                        </select>
+
+                    </div>
+                </div>
+                <!--END OF  TEST6-->
+
+                <!-- TEST7-->
+                <div class="row justify-content-end mt-4">
+
+                    <div class="col" align="center">
+                        <select class="form-control" name="TESTTYPE7">
+                            <option value="standard" selected>סטנדרט</option>
+                            <option value="perishable">נדיפים</option>
+                            <option value="cosmetics">קוסמטיקה</option>
+                            <option value="perfumes">בשמים</option>
+                            <option value="textile">טקסטיל</option>
+                            <option value="shoes">נעליים</option> 
+                            <option value="lotions">משחות</option>
+                            <option value="acrilate">אקרילאטים</option>
+                            <option value="dental">דנטלי</option>
+                            <option value="barbers">ספרים</option>
+                            <option value="metals">מתכוח</option>
+                            <option value="plants">צמחים</option>
+                            <option value="steroids">סטרואידים</option>
+                            <option value="baking">אפייה</option>
+                            <option value="oils">שמנים</option>
+                            <option value="makeup">איפור</option>
+                            <option value="rubber">גומי</option>
+                            <option value="plastic">פלסטיק</option>                           
+                        </select>
+                    </div>
+                
+                    <div class="col" align="center">
+                        <input type="text" name="TESTNUM7">
+                        <label for="TESTNUM1" class="col-form-label col-form-label-lg">מספר</label>
+                    </div>
+                    
+                    <div class="col" align="center">
+                        <select class="form-control" name="TESTRESULTS7">
+                            <option value="0" selected>+-</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                                                    
+                        </select>
+                    </div>
+
+                    <div class="col" align="center">
+                        <select name="TESTREL7">
+                            <option value="unknown" selected>UNKNOWN</option>
+                            <option value="non-relevant">NON RELEVANT</option>
+                            <option value='relevant'>RELEVANT</option>
+                        </select>
+
+                    </div>
+                </div>
+                <!--END OF  TEST7-->
+
+                <!-- TEST8-->
+                <div class="row justify-content-end mt-4">
+
+                    <div class="col" align="center">
+                        <select class="form-control" name="TESTTYPE8">
+                            <option value="standard" selected>סטנדרט</option>
+                            <option value="perishable">נדיפים</option>
+                            <option value="cosmetics">קוסמטיקה</option>
+                            <option value="perfumes">בשמים</option>
+                            <option value="textile">טקסטיל</option>
+                            <option value="shoes">נעליים</option> 
+                            <option value="lotions">משחות</option>
+                            <option value="acrilate">אקרילאטים</option>
+                            <option value="dental">דנטלי</option>
+                            <option value="barbers">ספרים</option>
+                            <option value="metals">מתכוח</option>
+                            <option value="plants">צמחים</option>
+                            <option value="steroids">סטרואידים</option>
+                            <option value="baking">אפייה</option>
+                            <option value="oils">שמנים</option>
+                            <option value="makeup">איפור</option>
+                            <option value="rubber">גומי</option>
+                            <option value="plastic">פלסטיק</option>                           
+                        </select>
+                    </div>
+                
+                    <div class="col" align="center">
+                        <input type="text" name="TESTNUM8">
+                        <label for="TESTNUM1" class="col-form-label col-form-label-lg">מספר</label>
+                    </div>
+                    
+                    <div class="col" align="center">
+                        <select class="form-control" name="TESTRESULTS8">
+                            <option value="0" selected>+-</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                                                    
+                        </select>
+                    </div>
+
+                    <div class="col" align="center">
+                        <select name="TESTREL8">
+                            <option value="unknown" selected>UNKNOWN</option>
+                            <option value="non-relevant">NON RELEVANT</option>
+                            <option value='relevant'>RELEVANT</option>
+                        </select>
+
+                    </div>
+                </div>
+                <!--END OF  TEST8-->
+
+                <!-- TEST9-->
+                <div class="row justify-content-end mt-4">
+
+                    <div class="col" align="center">
+                        <select class="form-control" name="TESTTYPE9">
+                            <option value="standard" selected>סטנדרט</option>
+                            <option value="perishable">נדיפים</option>
+                            <option value="cosmetics">קוסמטיקה</option>
+                            <option value="perfumes">בשמים</option>
+                            <option value="textile">טקסטיל</option>
+                            <option value="shoes">נעליים</option> 
+                            <option value="lotions">משחות</option>
+                            <option value="acrilate">אקרילאטים</option>
+                            <option value="dental">דנטלי</option>
+                            <option value="barbers">ספרים</option>
+                            <option value="metals">מתכוח</option>
+                            <option value="plants">צמחים</option>
+                            <option value="steroids">סטרואידים</option>
+                            <option value="baking">אפייה</option>
+                            <option value="oils">שמנים</option>
+                            <option value="makeup">איפור</option>
+                            <option value="rubber">גומי</option>
+                            <option value="plastic">פלסטיק</option>                           
+                        </select>
+                    </div>
+                
+                    <div class="col" align="center">
+                        <input type="text" name="TESTNUM9">
+                        <label for="TESTNUM1" class="col-form-label col-form-label-lg">מספר</label>
+                    </div>
+                    
+                    <div class="col" align="center">
+                        <select class="form-control" name="TESTRESULTS9">
+                            <option value="0" selected>+-</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                                                    
+                        </select>
+                    </div>
+
+                    <div class="col" align="center">
+                        <select name="TESTREL9">
+                            <option value="unknown" selected>UNKNOWN</option>
+                            <option value="non-relevant">NON RELEVANT</option>
+                            <option value='relevant'>RELEVANT</option>
+                        </select>
+
+                    </div>
+                </div>
+                <!--END OF  TEST9-->
+
+                <!-- TEST10-->
+                <div class="row justify-content-end mt-4">
+
+                    <div class="col" align="center">
+                        <select class="form-control" name="TESTTYPE10">
+                            <option value="standard" selected>סטנדרט</option>
+                            <option value="perishable">נדיפים</option>
+                            <option value="cosmetics">קוסמטיקה</option>
+                            <option value="perfumes">בשמים</option>
+                            <option value="textile">טקסטיל</option>
+                            <option value="shoes">נעליים</option> 
+                            <option value="lotions">משחות</option>
+                            <option value="acrilate">אקרילאטים</option>
+                            <option value="dental">דנטלי</option>
+                            <option value="barbers">ספרים</option>
+                            <option value="metals">מתכוח</option>
+                            <option value="plants">צמחים</option>
+                            <option value="steroids">סטרואידים</option>
+                            <option value="baking">אפייה</option>
+                            <option value="oils">שמנים</option>
+                            <option value="makeup">איפור</option>
+                            <option value="rubber">גומי</option>
+                            <option value="plastic">פלסטיק</option>                           
+                        </select>
+                    </div>
+                
+                    <div class="col" align="center">
+                        <input type="text" name="TESTNUM10">
+                        <label for="TESTNUM1" class="col-form-label col-form-label-lg">מספר</label>
+                    </div>
+                    
+                    <div class="col" align="center">
+                        <select class="form-control" name="TESTRESULTS10">
+                            <option value="0" selected>+-</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                                                    
+                        </select>
+                    </div>
+
+                    <div class="col" align="center">
+                        <select name="TESTREL10">
+                            <option value="unknown" selected>UNKNOWN</option>
+                            <option value="non-relevant">NON RELEVANT</option>
+                            <option value='relevant'>RELEVANT</option>
+                        </select>
+
+                    </div>
+                </div>
+                <!--END OF  TEST10-->
+
+                <!-- TEST11-->
+                <div class="row justify-content-end mt-4">
+
+                    <div class="col" align="center">
+                        <select class="form-control" name="TESTTYPE11">
+                            <option value="standard" selected>סטנדרט</option>
+                            <option value="perishable">נדיפים</option>
+                            <option value="cosmetics">קוסמטיקה</option>
+                            <option value="perfumes">בשמים</option>
+                            <option value="textile">טקסטיל</option>
+                            <option value="shoes">נעליים</option> 
+                            <option value="lotions">משחות</option>
+                            <option value="acrilate">אקרילאטים</option>
+                            <option value="dental">דנטלי</option>
+                            <option value="barbers">ספרים</option>
+                            <option value="metals">מתכוח</option>
+                            <option value="plants">צמחים</option>
+                            <option value="steroids">סטרואידים</option>
+                            <option value="baking">אפייה</option>
+                            <option value="oils">שמנים</option>
+                            <option value="makeup">איפור</option>
+                            <option value="rubber">גומי</option>
+                            <option value="plastic">פלסטיק</option>                           
+                        </select>
+                    </div>
+                
+                    <div class="col" align="center">
+                        <input type="text" name="TESTNUM11">
+                        <label for="TESTNUM1" class="col-form-label col-form-label-lg">מספר</label>
+                    </div>
+                    
+                    <div class="col" align="center">
+                        <select class="form-control" name="TESTRESULTS11">
+                            <option value="0" selected>+-</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                                                    
+                        </select>
+                    </div>
+
+                    <div class="col" align="center">
+                        <select name="TESTREL11">
+                            <option value="unknown" selected>UNKNOWN</option>
+                            <option value="non-relevant">NON RELEVANT</option>
+                            <option value='relevant'>RELEVANT</option>
+                        </select>
+
+                    </div>
+                </div>
+                <!--END OF  TEST11-->
+
+                <!-- TEST12-->
+                <div class="row justify-content-end mt-4">
+
+                    <div class="col" align="center">
+                        <select class="form-control" name="TESTTYPE12">
+                            <option value="standard" selected>סטנדרט</option>
+                            <option value="perishable">נדיפים</option>
+                            <option value="cosmetics">קוסמטיקה</option>
+                            <option value="perfumes">בשמים</option>
+                            <option value="textile">טקסטיל</option>
+                            <option value="shoes">נעליים</option> 
+                            <option value="lotions">משחות</option>
+                            <option value="acrilate">אקרילאטים</option>
+                            <option value="dental">דנטלי</option>
+                            <option value="barbers">ספרים</option>
+                            <option value="metals">מתכוח</option>
+                            <option value="plants">צמחים</option>
+                            <option value="steroids">סטרואידים</option>
+                            <option value="baking">אפייה</option>
+                            <option value="oils">שמנים</option>
+                            <option value="makeup">איפור</option>
+                            <option value="rubber">גומי</option>
+                            <option value="plastic">פלסטיק</option>                           
+                        </select>
+                    </div>
+                
+                    <div class="col" align="center">
+                        <input type="text" name="TESTNUM12">
+                        <label for="TESTNUM1" class="col-form-label col-form-label-lg">מספר</label>
+                    </div>
+                    
+                    <div class="col" align="center">
+                        <select class="form-control" name="TESTRESULTS12">
+                            <option value="0" selected>+-</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                                                    
+                        </select>
+                    </div>
+
+                    <div class="col" align="center">
+                        <select name="TESTREL12">
+                            <option value="unknown" selected>UNKNOWN</option>
+                            <option value="non-relevant">NON RELEVANT</option>
+                            <option value='relevant'>RELEVANT</option>
+                        </select>
+
+                    </div>
+                </div>
+                <!--END OF  TEST12-->
+
 
                 <!-- END OF TESTIM-->
 
